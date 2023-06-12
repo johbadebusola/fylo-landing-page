@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
 
 :root {
   --Very-Dark-Blue: hsl(243, 87%, 12%);
@@ -7,8 +7,8 @@
   --Moderate-Cyan: hsl(170, 45%, 43%);
   --Light-Grayish-Blue: hsl(240, 75%, 98%);
   --Light-Gray: hsl(0, 0%, 75%);
-  --Open-sans:'Open Sans', sans-serif;
-  --Raleway:'Raleway', sans-serif;
+  --Open-sans: "Open Sans", sans-serif;
+  --Raleway: "Raleway", sans-serif;
 }
 
 body {
@@ -92,7 +92,6 @@ footer > .contact > div > img {
 
 /* BODY */
 
-
 .body-cont > .grid1 {
   padding: 2em;
 }
@@ -112,7 +111,7 @@ footer > .contact > div > img {
   margin: auto;
   margin-top: 1.5em;
   margin-bottom: 1em;
-  font-family: var(--Open-sans);
+  font-family: var(--Raleway);
 }
 
 .body-cont > .grid1 > .box1 > p {
@@ -197,6 +196,10 @@ footer > .contact > div > img {
   height: 30px;
 }
 
+.body-cont > .grid2 > .box2 > h4{
+  font-family: var(--Raleway);
+}
+
 .body-cont > .grid2 > .box2 > .text-cont {
   background-color: white;
   margin: 2em;
@@ -204,15 +207,18 @@ footer > .contact > div > img {
   padding: 1em;
   box-shadow: 2px 2px 4px 1px var(--Light-Gray);
   font-size: 13px;
-  font-family: var(--Open-sans);
+  
 }
 
 .body-cont > .grid2 > .box2 > .text-cont > h1 {
   margin-bottom: -0.5em;
+  font-family: var(--Raleway)
 }
 
 .body-cont > .grid2 > .box2 > .text-cont > p {
   width: 94%;
+  line-height: 1.5;
+  font-family: var(--Open-sans);
 }
 
 .body-cont > .grid2 > .box2 > .text-cont > .author {
@@ -247,6 +253,7 @@ footer > .contact > div > img {
   .body-cont > .grid1 {
     display: flex;
     flex-direction: row-reverse;
+
   }
   .body-cont > .grid1 > .box1 {
     text-align: left;
@@ -264,16 +271,51 @@ footer > .contact > div > img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
+    /* background-color: tomato; */
+    
   }
 
   .body-cont > .grid1 > .box1 > .input-field > input {
     width: 70%;
     margin-bottom: 0;
     margin-right: 1em;
+    height: 30px;
   }
 
   .body-cont > .grid1 > .box1 > .input-field > button {
-    width: 30%;
+    width: 40%;
+    height: 30px;
+    font-size: 10px;
+    padding: 0;
+    
+  }
+
+  .grid2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .grid2 > .box2 > .text-cont {
+    width: 50%;
+  }
+
+  .body-cont > .grid2 > .box2 > h4 {
+    text-align: left;
+    font-size: 25px;
+  }
+  .body-cont > .grid2 > .box2 > .p1 , .p2 {
+   font-size: 12px;
+   width: 70%;
+   font-family: var(--Open-sans);
+  }
+
+  .body-cont > .grid1 > .box1 > h2{
+    width: 98%;
+  }
+
+  .body-cont > .grid1 > .box1 > p{
+    font-size: 12px;
+    width: 92%;
   }
 }
